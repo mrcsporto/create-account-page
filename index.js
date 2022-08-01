@@ -17,3 +17,15 @@
       }, false)
     })
   })()
+
+
+let firstName = ''
+let lastName = ''
+let fullName = ''
+
+function callName() {
+    firstName = document.getElementById('validationCustom01').value
+    lastName = document.getElementById('validationCustom02').value
+    return fullName = `${firstName} ${lastName}`
+} 
+
