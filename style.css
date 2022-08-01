@@ -77,9 +77,13 @@ button {
 
 
 @media only screen and (max-width: 510px) {
+     body {
+        overflow-y: hidden;
+  }
     .card {
         margin-left: 1rem!important;
         margin-right: 1rem!important;
+        overflow-y: hidden;
     }
     
 }
