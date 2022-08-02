@@ -18,14 +18,11 @@
     })
   })()
 
-
-let firstName = ''
-let lastName = ''
-let fullName = ''
-
-function callName() {
-    firstName = document.getElementById('validationCustom01').value
-    lastName = document.getElementById('validationCustom02').value
-    return fullName = `${firstName} ${lastName}`
-} 
+function getUserNames() {
+    let firstName = document.getElementById('validationCustom01').value
+    let lastName = document.getElementById('validationCustom02').value
+    let fullName = (`${firstName} ${lastName}`).toLowerCase()
+    console.log(fullName)
+}
+getUserNames()
 

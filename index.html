@@ -21,14 +21,14 @@
                       <div class="d-flex flex-wrap flex-grow-1 gap-2">
                           <div class="flex-grow-1">
                             <label for="validationCustom01" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="validationCustom01" oninput="callName()" value="" required>
+                            <input type="text" class="form-control" id="validationCustom01" onchange="getUserNames()" required>
                             <div class="invalid-feedback">
                               Type your first name.
                             </div>
                           </div>
                           <div class="flex-grow-1">
                             <label for="validationCustom02" class="form-label">Last name</label>
-                            <input type="text" class="form-control" id="validationCustom02" oninput="callName()" value="" required>
+                            <input type="text" class="form-control" id="validationCustom02" onchange="getUserNames()" required>
                             <div class="invalid-feedback">
                               Type your last name.
                             </div>
@@ -40,12 +40,12 @@
                           <span class="input-group-text" id="inputGroupPrepend">@</span>
                           <select class="form-select" type="text" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                               <option selected></option>
-                              <option value="1"></option>
-                              <option value="2"></option>
-                              <option value="3"></option>
-                              <option value="4"></option>
-                              <option value="5"></option>
-                              <option value="6"></option>
+                              <option id="option1"></option>
+                              <option id="option2"></option>
+                              <option id="option3"></option>
+                              <option id="option4"></option>
+                              <option id="option5"></option>
+                              <option id="option6"></option>
                             </select>
                           <div class="invalid-feedback">
                             Please choose a username.
